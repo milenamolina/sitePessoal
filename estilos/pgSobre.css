@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    border:0;
+    margin:0;
+}
+main{
+    max-width:1000px;
+    margin:auto;
+    padding: 20px;
+}
+h2{
+    color: #333;
+    margin-bottom: 10px;
+    
+}
+    
+.perfil {
+    position: relative;
+    margin-bottom: 40px;
+    
+}
+    
+.perfil p {
+    max-width: 600px;
+    
+}
+    
+article header {
+    all: unset; /*limpa heranças problemáticas*/
+    display: inline-block;
+    background: linear-gradient(45deg, #ffd700,#ffcc00);
+    padding: 4px 10px ;
+    border-radius: 15px;
+    font: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+    
+/*habilidades*/
+section{
+    float: left;
+    width: 70%;
+    margin-top: 0;
+    
+}
+    
+section ul {
+    margin-top: 10px;
+    padding-left: 0;
+    text-align: center;
+}
+    
+section ul li {
+    list-style: square;
+    list-style-position: inside;
+    
+}
+    
+section ul li:hover {
+    color: rgb(182, 137, 174);
+    transform: translateX(5px);
+    cursor: pointer;
+}
+    
+aside{
+    float: right;
+    width: 30%;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 0;
+    
+}
+    
+footer {
+    clear: both;
+}
+/*adapta o layout para telas menores como celulares e tablets*/
+@media(max-width:768px) {
+    .perfil{
+        flex-direction: column;
+        text-align: center;
+    }
+    section, aside{
+        float: none;
+        width: 100%;
+
+    }
+    aside{
+        margin:20px;
+    }
+
+}
